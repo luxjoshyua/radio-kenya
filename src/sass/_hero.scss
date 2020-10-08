@@ -9,7 +9,18 @@
     justify-content: center;
     align-items: center;
     .heading {
+      padding-top: 5vh;
+    }
+    .subhead {
+      font-size: 2rem;
+    }
+    .video {
       padding-top: 30vh;
+    }
+    .video-wrapper {
+      @include md {
+        max-height: 600px;
+      }
     }
   }
 }

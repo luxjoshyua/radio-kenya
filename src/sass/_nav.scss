@@ -1,3 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  padding: 0 20px;
+  border-bottom: 1px solid $black;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .brand {
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-right: 1px solid $black;
+    p {
+      padding: 20px 0;
+      color: $black;
+      font-size: 2rem;
+    }
+  }
+  .live {
+    width: calc(100% / 4 * 3);
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+    span {
+      color: $black;
+    }
+  }
+}
+
 .nav {
   position: absolute;
   bottom: 0;
@@ -21,13 +57,17 @@
         border: 2px solid $black;
         text-align: center;
         &:hover {
-          background-color: aquamarine;
+          background-color: $black;
+
           transition: background-color 0.5s ease-in-out;
         }
         li {
           text-align: center;
           line-height: 70px;
           color: $black;
+          &:hover {
+            color: $white;
+          }
         }
       }
     }
