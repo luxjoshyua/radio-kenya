@@ -1,0 +1,15 @@
+.hero {
+  height: 100vh;
+  .inner {
+    max-width: 1400px;
+    padding: 0 20px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .heading {
+      padding-top: 30vh;
+    }
+  }
+}
