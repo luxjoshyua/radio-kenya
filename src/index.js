@@ -7,14 +7,10 @@ const playBtn = document.querySelector(".fa-play");
 const stopBtn = document.querySelector(".fa-stop");
 const audio = document.getElementById("audio");
 
-function play() {
+playBtn.addEventListener("click", () => {
   audio.play();
   playBtn.classList.add("inactive");
   stopBtn.classList.add("active");
-}
-
-playBtn.addEventListener("click", () => {
-  play();
 });
 
 stopBtn.addEventListener("click", () => {
