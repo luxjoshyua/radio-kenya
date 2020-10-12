@@ -19,3 +19,21 @@ stopBtn.addEventListener("click", () => {
   playBtn.classList.remove("inactive");
   stopBtn.classList.remove("active");
 });
+
+const sideBar = document.querySelector(".sidebar");
+const title = document.querySelector(".title");
+const closeIcon = document.querySelector(".close-icon");
+
+sideBar.addEventListener("click", () => {
+  sideBar.classList.toggle("isActive");
+  sideBar.firstElementChild.classList.toggle("isActive");
+  title.classList.toggle("isHidden");
+});
+closeIcon.addEventListener("click", (e) => {
+  console.log("click here", e); 
+    console.log(sideBar.classList);
+    // document.querySelector(".isActive")
+    // ? document.querySelector(".isActive").classList.remove("active")
+    // : "";
+
+});
