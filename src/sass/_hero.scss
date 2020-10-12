@@ -47,11 +47,15 @@
         .minimise-icon {
           width: 12px;
           cursor: pointer;
+          &:hover {
+            color: $white;
+          }
         }
         h2 {
           transform: rotate(90deg);
           font-size: 2.4rem;
           margin-top: 162px;
+          letter-spacing: 20px;
         }
       }
       .content {
@@ -73,10 +77,14 @@
         }
         .copy {
           margin-top: 34px;
-          padding-bottom: 32px;
           p {
             color: $black;
             margin-bottom: 2rem;
+          }
+        }
+        .img-outer {
+          img {
+            max-width: 100%;
           }
         }
       }
@@ -85,7 +93,8 @@
 }
 
 .isActive {
-  width: 300px !important;
+  width: 288px !important;
+  border-left: 1px solid black;
 }
 
 .isHidden {
