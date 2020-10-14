@@ -2,7 +2,7 @@ import style from "./sass/index.scss";
 import "bootstrap";
 import fontawesome from "@fortawesome/fontawesome-free";
 import video from "./assets/videos/logo-cutdown-compressed.mp4";
-
+console.log("testing something");
 const playBtn = document.querySelector(".fa-play");
 const stopBtn = document.querySelector(".fa-stop");
 const audio = document.getElementById("audio");
