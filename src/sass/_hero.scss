@@ -3,7 +3,7 @@
   position: relative;
   .inner {
     max-width: 1400px;
-    padding: 180px 20px 0;
+    padding: 100px 20px 0;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
@@ -15,14 +15,13 @@
     .subhead {
       font-size: 2rem;
     }
-    .video {
-      padding-top: 30vh;
-    }
     .video-wrapper {
+      @include lg {
+        max-height: 900px;
+      }
       @include md {
         max-height: 600px;
       }
-      max-width: 900px;
     }
   }
   .sidebar {
