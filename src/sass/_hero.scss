@@ -62,6 +62,7 @@
         background-color: $white;
         min-height: 78vh;
         padding: 20px;
+        display: none;
         .toolbar {
           display: flex;
           justify-content: space-between;
@@ -98,4 +99,8 @@
 
 .isHidden {
   display: none !important;
+}
+
+.isContentActive {
+  display: block !important;
 }
