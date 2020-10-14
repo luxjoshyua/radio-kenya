@@ -2,7 +2,6 @@ import style from "./sass/index.scss";
 import "bootstrap";
 import fontawesome from "@fortawesome/fontawesome-free";
 import video from "./assets/videos/logo-cutdown-compressed.mp4";
-console.log(video);
 
 const playBtn = document.querySelector(".fa-play");
 const stopBtn = document.querySelector(".fa-stop");
