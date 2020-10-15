@@ -21,7 +21,7 @@
       padding: 20px 0;
       color: $black;
       font-size: 2rem;
-      letter-spacing: 20px;
+      letter-spacing: 10px;
     }
   }
   .live {
@@ -63,7 +63,7 @@
         transform: translateX(100%);
         /* Apply animation to this element */
         animation: scroll-left 20s linear infinite;
-        letter-spacing: 20px;
+        letter-spacing: 10px;
       }
     }
   }
@@ -105,10 +105,10 @@
           background-color: black;
         }
         &:nth-of-type(3) {
-          background-color: #be3a34;
+          background-color: $red;
         }
         &:nth-of-type(5) {
-          background-color: #009a44;
+          background-color: $green;
         }
         li {
           text-align: center;
