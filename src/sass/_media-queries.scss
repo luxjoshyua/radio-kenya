@@ -1,6 +1,8 @@
 // Small tablets and large smartphones (landscape view)
 $screen-mobile: 600px;
 
+$screen-tablet: 1000px;
+
 // Tablets and small desktops
 $screen-med: 1440px;
 
@@ -17,7 +19,14 @@ $screen-large: 1920px;
   }
 }
 
-// Medium devices - <= 1200px
+// Small devices - <= 1000px
+@mixin tablet {
+  @media (max-width: #{$screen-tablet}) {
+    @content;
+  }
+}
+
+// Medium devices - <= 1440px
 @mixin md {
   @media (max-width: #{$screen-med}) {
     @content;

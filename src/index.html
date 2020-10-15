@@ -18,15 +18,8 @@
 
 </head>
 
-<!-- TODO: add looping text animation in the top left e.g. Radio 254 is ____animate text_____ -->
 <!-- TODO: do mobile -->
 <!-- TODO: fix marquee so continuously looping -->
-
-
-<!-- two sentences to animate -->
-<!-- is a platform and non-profit -->
-<!-- showcasing Kenyan musicians, creatives and curatives -->
-<!-- A platform and non-profit showcasing Kenyan musicians, creatives and curatives. -->
 
 
 <body>
@@ -57,16 +50,12 @@
   </header>
 
   <section class="hero">
-
     <div class="inner">
       <div class="content-play-wrapper">
         <h2>Radio 254 is 
           <span class="text-animate">a platform and non-profit</span>
-        
       </h2>
       </div>
-
-
       <video class="video-wrapper" autoplay="true" loop="true">
         <source src="logo-cutdown-compressed.mp4" type="video/mp4" />
       </video>
@@ -163,21 +152,33 @@
   </section>
 
   <nav class="nav">
+
     <div class="inner">
+
+
+
       <ul>
-        <a href="#" class="nav-item">
+        <a href="mailto:radio254@icloud.com?subject=Hello!" class="nav-item">
           <li class="first">contact</li>
         </a>
-        <a href="#" class="nav-item">
-          <li>donate</li>
-        </a>
-        <a href="#" class="nav-item">
+        <a class="nav-item">
+          <!-- <li>donate</li> -->
+          <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="5E9R82G2NPVJY" />
+            
+            
+            <!-- <li>donate</li> -->
+            <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /> -->
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+          </a>
+        <a href="mailto:radio254@icloud.com?Subject=Submit%20some%20music" class="nav-item">
           <li>submit music</li>
         </a>
-        <a href="#" class="nav-item">
+        <a href="mailto:calendly.com/radio254?Subject=Schedule%20a%20show" class="nav-item">
           <li>schedule broadcast</li>
         </a>
-        <a href="#" class="nav-item">
+        <a href="mailto:contentcreation@radio254.online?Subject=Partner%20with%20us" class="nav-item">
           <li>partner</li>
         </a>
       </ul>
