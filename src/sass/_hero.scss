@@ -38,6 +38,9 @@
       @include md {
         max-height: 600px;
       }
+      @include tablet {
+        max-width: 100%;
+      }
     }
   }
   .sidebar {
@@ -48,6 +51,9 @@
     border-left: 1px solid $black;
     display: flex;
     background-color: $white;
+    @include tablet {
+      display: none;
+    }
     .about {
       width: 66px;
       overflow-y: scroll;

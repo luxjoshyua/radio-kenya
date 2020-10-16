@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   background-color: $white;
-  padding: 0 20px;
   border-bottom: 1px solid $black;
   height: 75px;
   display: flex;
@@ -17,11 +16,23 @@
     align-items: center;
     padding-left: 20px;
     border-right: 1px solid $black;
+    @include tablet {
+      padding-left: 0;
+    }
     p {
       padding: 20px 0;
       color: $black;
       font-size: 2rem;
       letter-spacing: 10px;
+      @include tablet {
+        font-size: 2.8rem;
+        letter-spacing: 4px;
+        width: 100%;
+        text-align: center;
+      }
+      @include sm {
+        font-size: 1.2rem;
+      }
     }
   }
   .live {
@@ -67,6 +78,25 @@
       }
     }
   }
+  .hamburger {
+    border-left: 1px solid $black;
+    position: relative;
+    z-index: 200;
+    @media screen and (min-width: 1001px) {
+      display: none;
+    }
+    width: calc(100% / 8);
+    height: 100%;
+    .hamburger-wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fa-bars {
+        color: $black;
+      }
+    }
+  }
 }
 
 @keyframes scroll-left {
@@ -84,6 +114,9 @@
   left: 0;
   background-color: $white;
   width: 100%;
+  @include tablet {
+    display: none;
+  }
   .inner {
     width: 100%;
     ul {
@@ -126,4 +159,51 @@
       }
     }
   }
+}
+
+.nav-links-mb {
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  position: relative;
+  top: calc(0px + 75px);
+  display: none;
+  @media screen and (min-width: 1001px) {
+    display: none;
+  }
+  .nav-inner-mb {
+    position: relative;
+    padding: 40px 20px;
+    ul {
+      padding: 0;
+      .nav-item {
+        width: 100%;
+        li {
+          list-style: none;
+          border: 1px solid $black;
+          color: $black;
+          text-align: center;
+          margin-bottom: 40px;
+          line-height: 3em;
+          &.last {
+            margin-bottom: 0;
+          }
+          &.submit {
+            margin-top: 40px;
+          }
+          .paypal-btn {
+            position: relative;
+            top: 10px;
+          }
+        }
+        form {
+          max-height: 50px;
+        }
+      }
+    }
+  }
+}
+
+.activeNavMb {
+  display: block;
 }

@@ -3,7 +3,6 @@ import "bootstrap";
 import fontawesome from "@fortawesome/fontawesome-free";
 import video from "./assets/videos/logo-cutdown-compressed.mp4";
 
-
 // Playbutton
 const playBtn = document.querySelector(".fa-play");
 const stopBtn = document.querySelector(".fa-stop");
@@ -23,7 +22,6 @@ stopBtn.addEventListener("click", () => {
   stopBtn.classList.remove("active");
 });
 
-
 // Sidebar
 const sideBar = document.querySelector(".sidebar");
 const title = document.querySelector(".title");
@@ -34,8 +32,6 @@ sideBar.addEventListener("click", () => {
   title.classList.toggle("isHidden");
   content.classList.toggle("isContentActive");
 });
-
-
 
 // Text loop
 const text2Loop = [
@@ -49,7 +45,7 @@ function textSequence(i) {
   const textAnimate = document.querySelector(".text-animate");
   if (textAnimate !== null) {
     if (text2Loop.length > i) {
-      setTimeout(function() {
+      setTimeout(function () {
         textAnimate.innerHTML = text2Loop[i];
         textSequence(++i);
       }, 3000); // 1 second (in milliseconds)
@@ -59,3 +55,12 @@ function textSequence(i) {
     }
   }
 }
+
+// Hamburger Nav
+const hamburger = document.querySelector(".hamburger");
+const navContentMb = document.querySelector(".nav-links-mb");
+console.log(hamburger);
+hamburger.addEventListener("click", (e) => {
+  console.log(e);
+  navContentMb.classList.toggle("activeNavMb");
+});
