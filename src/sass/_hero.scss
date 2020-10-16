@@ -1,141 +1,147 @@
 .hero {
-  height: 100vh;
-  position: relative;
-  .inner {
-    // max-width: 1400px;
-    padding: 100px 40px 0;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    height: 100vh;
     position: relative;
-    height: 100%;
-    .content-play-wrapper {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      @include tablet {
-        padding-top: 20px;
-        padding-right: 40px;
+    .inner {
+        // max-width: 1400px;
+        padding: 100px 40px 0;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        @include sm {
+            padding: 100px 20px 0;
+        }
+        .content-play-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            @include tablet {
+                padding-top: 20px;
+                padding-right: 40px;
+                position: fixed;
+                top: 75px;
+                left: 40px;
+                max-width: 100%;
+            }
+            h2 {
+                font-size: 2rem;
+                line-height: 1.8em;
+                letter-spacing: 10px;
+                .text-animate {
+                    display: block;
+                }
+            }
+        }
+        .heading {
+            padding-top: 5vh;
+        }
+        .subhead {
+            font-size: 2rem;
+        }
+        .video-wrapper {
+            @include lg {
+                max-height: 700px;
+            }
+            @include md {
+                max-height: 600px;
+            }
+            @include tablet {
+                max-height: 500px;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+            }
+            @include sm {
+                max-width: 340px;
+            }
+        }
+    }
+    .sidebar {
         position: fixed;
         top: 75px;
-        left: 40px;
-        max-width: 100%;
-      }
-      h2 {
-        font-size: 2rem;
-        line-height: 1.8em;
-        letter-spacing: 10px;
-        .text-animate {
-          display: block;
-        }
-      }
-    }
-    .heading {
-      padding-top: 5vh;
-    }
-    .subhead {
-      font-size: 2rem;
-    }
-    .video-wrapper {
-      @include lg {
-        max-height: 700px;
-      }
-      @include md {
-        max-height: 600px;
-      }
-      @include tablet {
-        max-height: 500px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-      }
-    }
-  }
-  .sidebar {
-    position: fixed;
-    top: 75px;
-    right: 0;
-    height: 100vh;
-    border-left: 1px solid $black;
-    display: flex;
-    background-color: $white;
-    @include tablet {
-      display: none;
-    }
-    .about {
-      width: 66px;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      .title {
-        padding: 20px;
-        width: 100%;
-        height: 100%;
+        right: 0;
+        height: 100vh;
+        border-left: 1px solid $black;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        .minimise-icon {
-          width: 12px;
-          cursor: pointer;
-          &:hover {
-            color: $white;
-          }
-        }
-        h2 {
-          transform: rotate(90deg);
-          font-size: 2.4rem;
-          margin-top: 162px;
-          letter-spacing: 10px;
-        }
-      }
-      .content {
-        margin: 0;
         background-color: $white;
-        min-height: 130vh;
-        padding: 20px;
-        display: none;
-        .toolbar {
-          display: flex;
-          justify-content: space-between;
-          h2 {
-            font-size: 2.4rem;
-            color: $black;
-          }
-          .close-icon {
-            width: 22px;
-            cursor: pointer;
-          }
+        @include tablet {
+            display: none;
         }
-        .copy {
-          margin-top: 34px;
-          p {
-            color: $black;
-            margin-bottom: 2rem;
-          }
+        .about {
+            width: 66px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            .title {
+                padding: 20px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .minimise-icon {
+                    width: 12px;
+                    cursor: pointer;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+                h2 {
+                    transform: rotate(90deg);
+                    font-size: 2.4rem;
+                    margin-top: 162px;
+                    letter-spacing: 10px;
+                }
+            }
+            .content {
+                margin: 0;
+                background-color: $white;
+                min-height: 130vh;
+                padding: 20px;
+                display: none;
+                .toolbar {
+                    display: flex;
+                    justify-content: space-between;
+                    h2 {
+                        font-size: 2.4rem;
+                        color: $black;
+                    }
+                    .close-icon {
+                        width: 22px;
+                        cursor: pointer;
+                    }
+                }
+                .copy {
+                    margin-top: 34px;
+                    p {
+                        color: $black;
+                        margin-bottom: 2rem;
+                    }
+                }
+                .img-outer {
+                    padding-bottom: 20px;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
         }
-        .img-outer {
-          padding-bottom: 20px;
-          img {
-            max-width: 100%;
-          }
-        }
-      }
     }
-  }
 }
 
 .isActive {
-  width: 288px !important;
-  border-left: 1px solid black;
+    width: 288px !important;
+    border-left: 1px solid black;
 }
 
 .isHidden {
-  display: none !important;
+    display: none !important;
 }
 
 .isContentActive {
-  display: block !important;
+    display: block !important;
 }
