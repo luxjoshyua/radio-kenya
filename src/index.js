@@ -82,3 +82,18 @@ function toggleNav() {
   hamburger.classList.toggle("active");
   navDom.classList.toggle("activeNavMb");
 }
+
+// Marquee
+// here we make a function called makeMarquee
+function makeMarquee() {
+  const title = "Playing 100% Kenyan content 24/7";
+  // then we fill it with the text from our title (50 times)
+  // we then join them all together as one text string using a ' — '
+  const marqueeText = new Array(80).fill(title).join(" — ");
+  const marquee = document.querySelector(".marquee-wrapper span");
+  // using innerHTML lets us set the content inside an element
+  marquee.innerHTML = marqueeText;
+}
+
+// here we actually run our makeMarquee function
+makeMarquee();
