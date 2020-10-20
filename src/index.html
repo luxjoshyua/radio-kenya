@@ -16,9 +16,6 @@
   <link rel="icon" type="image/png" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="./assets/favicon/android-chrome-192x192.png">
   <link rel="icon" type="image/png" href="./assets/favicon/android-chrome-512x512.png">
-
-
-
   <meta property="og:title"
     content="Radio 254 is a platform and non-profit showcasing Kenyan musicians, creatives and curatives." />
   <meta name="twitter:title"
@@ -41,11 +38,14 @@
   <meta property="og:image:secure_url"
     content="https://drive.google.com/file/d/1ue2e9glwnrvh4NH7zVeY0LDOntgGltqR/preview" />
   <meta name="twitter:image" content="https://drive.google.com/file/d/1ue2e9glwnrvh4NH7zVeY0LDOntgGltqR/preview" />
-
 </head>
 
-<!-- TODO: fix marquee so continuously looping -->
 
+
+<!-- TODO: 
+  - setup analytics 
+
+-->
 
 <body>
   <header class="header">
@@ -87,17 +87,19 @@
         <a href="mailto:radio254@icloud.com?subject=Hello!" class="nav-item">
           <li class="first">contact</li>
         </a>
-        <div class="nav-item">
-          <form action="https://www.paypal.com/donate" method="post" target="_top">
-            <input type="hidden" name="hosted_button_id" value="5E9R82G2NPVJY" />
-            <li class="second">
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
-                class="paypal-btn" name="submit" title="PayPal - The safer, easier way to pay online!"
-                alt="Donate with PayPal button" />
-            </li>
-            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-          </form>
-        </div>
+        <!-- -->
+          <div class="nav-item">
+            <form action="https://www.paypal.com/donate" method="post" target="_top" >
+              <input type="hidden" name="hosted_button_id" value="5E9R82G2NPVJY" />
+              <li class="second" >
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
+                  class="paypal-btn" name="submit" title="PayPal - The safer, easier way to pay online!"
+                  alt="Donate with PayPal button" />
+              </li>
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"  />
+            </form>
+          </div>
+       
         <a href="mailto:radio254@icloud.com?Subject=Submit%20some%20music" class="nav-item">
           <li class="submit">submit music</li>
         </a>
