@@ -1,15 +1,6 @@
 .hero {
   height: 100vh;
   position: relative;
-  .bg-image {
-    position: fixed;
-    left: 50%;
-    z-index: 20;
-    transform: translate(-50%, 0) scale(1.6);
-    @include tablet {
-      display: none;
-    }
-  }
   .inner {
     // max-width: 1400px;
     padding: 100px 40px 0;
@@ -104,10 +95,14 @@
           }
         }
         h2 {
-          transform: rotate(90deg);
           font-size: 2rem;
           margin-top: 162px;
           letter-spacing: 10px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: translate(0px, -120px) rotate(90deg);
         }
       }
       .content {

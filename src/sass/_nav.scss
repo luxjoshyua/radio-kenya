@@ -188,7 +188,7 @@
           background-color: $green;
         }
         &.donate-btn {
-          background-color: $white;
+          background-color: $green;
         }
         li {
           text-align: center;
@@ -233,6 +233,10 @@
       padding: 0;
       .nav-item {
         width: 100%;
+
+        &.donate-btn {
+          background-color: $green;
+        }
         li {
           list-style: none;
           border: 1px solid $black;
@@ -240,8 +244,19 @@
           text-align: center;
           margin-bottom: 40px;
           line-height: 3em;
+          &.first {
+            background-color: $black;
+            color: $white;
+          }
+          &.second {
+            background-color: $green;
+          }
+          &.submit {
+            background-color: $red;
+          }
           &.last {
             margin-bottom: 0;
+            background-color: $green;
           }
           &.submit {
             margin-top: 40px;
