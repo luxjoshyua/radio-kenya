@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 30;
   @include sm {
     justify-content: space-between;
   }
@@ -156,6 +157,7 @@
   left: 0;
   background-color: $white;
   width: 100%;
+  z-index: 20;
   @include tablet {
     display: none;
   }
