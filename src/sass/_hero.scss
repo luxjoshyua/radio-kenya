@@ -1,8 +1,25 @@
 .hero {
   height: 100vh;
   position: relative;
+  .poster-wrapper {
+    position: fixed;
+    top: 220px;
+    left: 0px;
+    z-index: 3;
+    @include lg {
+      top: 300px;
+    }
+    @include md {
+      top: 190px;
+    }
+    @include tablet {
+      display: none;
+    }
+    img {
+      max-height: 500px;
+    }
+  }
   .inner {
-    // max-width: 1400px;
     padding: 100px 40px 0;
     display: flex;
     margin: 0 auto;
