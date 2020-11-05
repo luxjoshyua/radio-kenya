@@ -7,6 +7,11 @@ import poster1 from "./assets/images/poster1-tiny.jpg";
 import poster2 from "./assets/images/poster2-tiny.jpg";
 import poster3 from "./assets/images/poster3-tiny.jpg";
 
+// import robot from "./docs/robots.txt";
+// console.log(robot);
+// import sitemap from "./docs/sitemap.xml";
+// console.log(sitemap);
+
 console.log(
   "%c Built by josh, reach out at josh.e.fielding@gmail.com",
   "font-size: 30px;background:blue;text-shadow:5px 5px 0 green"

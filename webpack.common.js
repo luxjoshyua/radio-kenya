@@ -27,6 +27,30 @@ module.exports = {
         use: ["file-loader"],
       },
       {
+        test: /\.(txt)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "files/",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(xml)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "files/",
+            },
+          },
+        ],
+      },
+      {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
