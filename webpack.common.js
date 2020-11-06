@@ -33,7 +33,7 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "files/",
+              outputPath: "",
             },
           },
         ],
@@ -45,7 +45,7 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "files/",
+              outputPath: "",
             },
           },
         ],
