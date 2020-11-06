@@ -82,13 +82,6 @@ if (hamburger !== null) {
     toggleNav();
   });
 }
-// if (navLinks !== null) {
-//   navLinks.forEach(link => {
-//     link.addEventListener("click", function() {
-//       toggleNav();
-//     });
-//   });
-// }
 
 function toggleNav() {
   hamburger.classList.toggle("active");
@@ -96,14 +89,10 @@ function toggleNav() {
 }
 
 // Marquee
-// here we make a function called makeMarquee
 function makeMarquee() {
   const title = "Playing 100% Kenyan content 24/7";
-  // then we fill it with the text from our title (50 times)
-  // we then join them all together as one text string using a ' — '
   const marqueeText = new Array(80).fill(title).join(" — ");
   const marquee = document.querySelector(".marquee-wrapper span");
-  // using innerHTML lets us set the content inside an element
   marquee.innerHTML = marqueeText;
 }
 
@@ -111,14 +100,14 @@ function makeMarquee() {
 makeMarquee();
 
 // Random poster
-setInterval(() => {
-  const imageArray = [
-    "./img/poster1-tiny.jpg",
-    "./img/poster2-tiny.jpg",
-    "./img/poster3-tiny.jpg",
-  ];
-  const randomImageItem =
-    imageArray[Math.floor(Math.random() * imageArray.length)];
-  const posterImage = document.querySelector(".poster-wrapper img");
-  posterImage.src = randomImageItem;
-}, 600000);
+// setInterval(() => {
+//   const imageArray = [
+//     "./img/poster1-tiny.jpg",
+//     "./img/poster2-tiny.jpg",
+//     "./img/poster3-tiny.jpg",
+//   ];
+//   const randomImageItem =
+//     imageArray[Math.floor(Math.random() * imageArray.length)];
+//   const posterImage = document.querySelector(".poster-wrapper img");
+//   posterImage.src = randomImageItem;
+// }, 600000);
