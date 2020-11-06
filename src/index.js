@@ -100,14 +100,14 @@ function makeMarquee() {
 makeMarquee();
 
 // Random poster
-// setInterval(() => {
-//   const imageArray = [
-//     "./img/poster1-tiny.jpg",
-//     "./img/poster2-tiny.jpg",
-//     "./img/poster3-tiny.jpg",
-//   ];
-//   const randomImageItem =
-//     imageArray[Math.floor(Math.random() * imageArray.length)];
-//   const posterImage = document.querySelector(".poster-wrapper img");
-//   posterImage.src = randomImageItem;
-// }, 600000);
+setInterval(() => {
+  const imageArray = [
+    "./img/poster1-tiny.jpg",
+    "./img/poster2-tiny.jpg",
+    "./img/poster3-tiny.jpg",
+  ];
+  const randomImageItem =
+    imageArray[Math.floor(Math.random() * imageArray.length)];
+  const posterImage = document.querySelector(".poster-wrapper img");
+  posterImage.src = randomImageItem;
+}, 600000);
