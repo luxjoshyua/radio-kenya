@@ -11,9 +11,9 @@ import favicon from "./assets/favicon/favicon.png";
 // console.log(favicon);
 
 import robot from "./docs/robots.txt";
-console.log(robot);
+// console.log(robot);
 import sitemap from "./docs/sitemap.xml";
-console.log(sitemap);
+// console.log(sitemap);
 
 console.log(
   "%c Built by josh, reach out at josh.e.fielding@gmail.com",
