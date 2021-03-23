@@ -16,8 +16,10 @@ fetch(apiURL)
 const setCurrentSong = (data) => {
   const songSpan = document.getElementById('song-title');
   const currentSong = (songSpan.innerHTML = data.tracks[0].title);
-  const title = 'Now playing: ';
-  const marqueeText = new Array(40).fill(title).join(`${currentSong} - `);
+  const title = 'Now playing: 100% Kenyan Music and Content - ';
+  const marqueeText = new Array(40)
+    .fill(title)
+    .join(`Now Playing: ${currentSong} - `);
   const marquee = document.querySelector('.marquee-wrapper .intro-text');
   marquee.innerHTML = marqueeText;
 };
