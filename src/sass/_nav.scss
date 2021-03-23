@@ -101,7 +101,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-
+      display: flex;
       @keyframes moveLeft {
         0% {
           transform: translateX(0);
@@ -114,7 +114,7 @@
         color: $black;
         letter-spacing: 10px;
         font-weight: 700;
-        animation: moveLeft 320s infinite;
+        animation: moveLeft 300s infinite;
         white-space: nowrap;
         display: block;
         position: relative;
@@ -306,7 +306,7 @@
         &:before,
         &:after {
           display: block;
-          content: "";
+          content: '';
         }
         &:before {
           top: 8px;
@@ -318,7 +318,7 @@
           top: 16px;
           bottom: -10px;
           display: block;
-          content: "";
+          content: '';
         }
       }
     }

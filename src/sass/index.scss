@@ -1,12 +1,11 @@
-@import "~bootstrap/scss/bootstrap";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import "media-queries";
-@import "variables";
-@import "utilities";
-@import "fonts";
-@import "sections";
-@import "hero";
-@import "nav";
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import 'media-queries';
+@import 'variables';
+@import 'utilities';
+@import 'fonts';
+@import 'hero';
+@import 'nav';
 
 html {
   font-size: 62.5%;
@@ -25,7 +24,7 @@ body {
   line-height: 1.8em;
   color: $white;
   position: relative;
-  font-family: "Univers", Arial, Helvetica, sans-serif;
+  font-family: 'Univers', Arial, Helvetica, sans-serif;
   overflow: hidden;
 }
 
